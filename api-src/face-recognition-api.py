@@ -41,8 +41,41 @@ def allowed_file(filename):
 @app.route('/api/add_message/<uuid>', methods=['GET', 'POST'])
 def add_message(uuid):
     content = request.json
-    print(content['mytext'])
-    return jsonify({"uuid":uuid})
+    print(content['one'])
+    
+    
+    
+    unknown = urlopen(content['unknown'])
+    unknown_img = face_recognition.load_image_file(unknown)
+    
+    
+    unknown_face_encoding = face_recognition.face_encodings(unknown_img)[0]
+    
+   
+    # results is an array of True/False telling if the unknown face matched anyone in the known_faces array
+    
+    known_faces = []
+    name = "name"
+    names = ["No Name"] * int(content['numfaces'])
+    for i in range(int(content['numfaces'])):
+        known = urlopen(content[str(i)])
+        known_img = face_recognition.load_image_file(known)
+        known_face_encoding = face_recognition.face_encodings(known_img)[0]
+        known_faces.append(known_face_encoding)
+        name = "name" + str(i)
+        names[i] = content[name]
+    
+    
+    
+    
+    results = face_recognition.compare_faces(known_faces, unknown_face_encoding)
+    
+    for i in range(len(results)):
+        if results[i]:
+            return jsonify({"same":str(names[i])})
+    
+    
+    return jsonify({"same":"neg"})
 
 
 @app.route('/', methods=['GET', 'POST'])
