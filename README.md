@@ -14,7 +14,7 @@ built with deep learning. The model has an accuracy of 99.38% on the
 
 ## Thanks
 
-* This project is based on [Adam Geitgey's](https://github.com/ageitgey/face_recognition) facial recognition project.
+* Thanks to [Adam Geitgey's](https://github.com/ageitgey/face_recognition) facial recognition api project.
 * Many, many thanks to [Davis King](https://github.com/davisking) ([@nulhom](https://twitter.com/nulhom))
 for creating dlib and for providing the trained facial feature detection and face encoding models
 used in this library. For more information on the ResNet that powers the face encodings, check out
