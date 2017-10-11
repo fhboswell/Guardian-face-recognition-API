@@ -1,6 +1,6 @@
 # Face Recognition
 
-
+This is a webservice for deployment on AWS Elastic Beanstalk based on [Adam Geitgey's](https://github.com/ageitgey/face_recognition) facial recognition project.
 
 Built using [dlib](http://dlib.net/)'s state-of-the-art face recognition
 built with deep learning. The model has an accuracy of 99.38% on the
@@ -14,7 +14,7 @@ built with deep learning. The model has an accuracy of 99.38% on the
 
 ## Thanks
 
-* This project is based on [Adam Geitgey's](https://github.com/ageitgey/face_recognition) facial recognition api adapted for deployment on AWS Elastic Beanstalk as an api
+* This project is based on [Adam Geitgey's](https://github.com/ageitgey/face_recognition) facial recognition project.
 * Many, many thanks to [Davis King](https://github.com/davisking) ([@nulhom](https://twitter.com/nulhom))
 for creating dlib and for providing the trained facial feature detection and face encoding models
 used in this library. For more information on the ResNet that powers the face encodings, check out
