@@ -2,6 +2,17 @@
 
 This is a webservice for deployment on AWS Elastic Beanstalk based on [Adam Geitgey's](https://github.com/ageitgey/face_recognition) facial recognition project.
 
+# To Use
+This webservice can be deployed to an AWS EC2 instance through docker.
+
+the pre built docker image is here: fhboswell/face-recognition
+`docker pull fhboswell/face-recognition`
+
+More information[here](https://docs.docker.com/get-started/part6/#deploy-your-app-on-a-cloud-provider):
+
+
+
+
 Built using [dlib](http://dlib.net/)'s state-of-the-art face recognition
 built with deep learning. The model has an accuracy of 99.38% on the
 [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) benchmark.
