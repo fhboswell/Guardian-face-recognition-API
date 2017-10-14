@@ -8,10 +8,10 @@ This webservice can be deployed to an AWS EC2 instance through docker.
 the pre built docker image is here: fhboswell/face-recognition
 `docker pull fhboswell/face-recognition`
 
-More information[here](https://docs.docker.com/get-started/part6/#deploy-your-app-on-a-cloud-provider):
+More information on deployment [here](https://docs.docker.com/get-started/part6/#deploy-your-app-on-a-cloud-provider)
 
 
-
+# Info
 
 Built using [dlib](http://dlib.net/)'s state-of-the-art face recognition
 built with deep learning. The model has an accuracy of 99.38% on the
